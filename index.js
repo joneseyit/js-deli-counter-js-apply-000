@@ -2,6 +2,18 @@ function takeANumber(curLine, newPerson){
   curLine.push(newPerson);
   return `Welcome, ${newPerson}. You are number ${curLine.length} in line.`;
 }
+curline = [1]
+ let counterVar = 0;
+function takeANumberAlternate(curLine){
+  counterVar += 1;
+  curLine.push(counterVar);
+  return `Welcome!  Your are ${counterVar} in line.`
+  
+}
+
+function resetCounter(){
+  counterVar = 0
+}
 
 function nowServing(curLine){
   if(curLine.length === 0) return "There is nobody waiting to be served!";
@@ -22,3 +34,4 @@ function currentLine(curLine){
   }
   return newString;
 }
+
